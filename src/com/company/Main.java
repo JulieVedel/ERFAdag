@@ -21,34 +21,24 @@ public class Main {
 
             if (symbol.equals("+")) {
                 System.out.println("Resultatet er:" + (x + y));
-                System.out.println("Er du færdig med lommeregneren? (Skriv ja/nej)");
-                String svar = scanner.next();
-                if (svar.equalsIgnoreCase("ja")) {
-                    exit = true;}
+
             } else if (symbol.equals("-")) {
                 System.out.println("Resultatet er:" + (x - y));
-                System.out.println("Er du færdig med lommeregneren? (Skriv ja/nej)");
-                String svar = scanner.next();
-                if (svar.equalsIgnoreCase("ja")) {
-                    exit = true;}
+
             } else if (symbol.equals("/")) {
                 System.out.println("Resultatet er:" + (x / y));
-                System.out.println("Er du færdig med lommeregneren? (Skriv ja/nej)");
-                String svar = scanner.next();
-                if (svar.equalsIgnoreCase("ja")) {
-                    exit = true;}
+
             } else if (symbol.equals("*")) {
                 System.out.println("Resultatet er: " + (x * y));
-                System.out.println("Er du færdig med lommeregneren? (Skriv ja/nej)");
-                String svar = scanner.next();
-                if (svar.equalsIgnoreCase("ja")) {
-                    exit = true;}
+
             } else {
-                System.out.println("Fejl");
-                System.out.println("Vil du forsøge igen?");
-                String svar = scanner.next();
-                if (svar.equalsIgnoreCase("nej")) {
-                    exit = true;}
+                System.out.println("Fejl, ugyldigt tegn");
+
+            }
+            System.out.println("Vil du prøve lommeregneren igen? (Skriv ja/nej)");
+            String svar = scanner.next();
+            if (svar.equalsIgnoreCase("ja")) {
+                exit = true;
             }
         }
     }
