@@ -16,7 +16,7 @@ public class Main {
             System.out.println("Skriv endnu tal.");
             double y = scanner.nextDouble();
 
-            System.out.println("Hvordan vil du regne med det nye tal? Skriv +, -, / eller *");
+            System.out.println("Hvordan vil du regne med disse tal? Skriv +, -, / eller *");
             String symbol = scanner.next();
 
             if (symbol.equals("+")) {
@@ -38,7 +38,7 @@ public class Main {
                 if (svar.equalsIgnoreCase("ja")) {
                     exit = true;}
             } else if (symbol.equals("*")) {
-                System.out.println("Resultatet er:" + (x * y));
+                System.out.println("Resultatet er: " + (x * y));
                 System.out.println("Er du færdig med lommeregneren? (Skriv ja/nej)");
                 String svar = scanner.next();
                 if (svar.equalsIgnoreCase("ja")) {
