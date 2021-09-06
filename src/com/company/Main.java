@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Hvilket tal skal jeg lægge til?");
         double y = scanner.nextDouble();
 
-        double sum = x + y;
+        double sum = x - y;
         System.out.println("Summen af disse to tal er: " + sum);
 
     }
